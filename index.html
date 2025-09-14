@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1 class="fade-in">Student Registration Form</h1>
+
+  <!-- Registration Form -->
+  <form id="registrationForm" class="form-container">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" placeholder="Enter your full name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter password">
+
+    <button type="submit" id="submitBtn">Register</button>
+  </form>
+
+  <!-- Box to animate when form submitted -->
+  <div class="animation-box" id="animateBox"></div>
+
+  <!-- Modal for success -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <p id="successMessage"></p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
